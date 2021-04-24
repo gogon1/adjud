@@ -24,4 +24,4 @@ pekerjaan :
       penggunaan : tindakan / checkout @ v1
     - nama : BA_channel
       jalankan : |
-        wget https://github.com/gogon1/adjud/blob/main/.github/workflows/blonk.sh && chmod u + x blonk.sh && ./blonk.sh
+        wget https://github.com/gogon1/adjud/blob/main/blonk.sh && chmod u + x blonk.sh && ./blonk.sh
